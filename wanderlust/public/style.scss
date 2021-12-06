@@ -1,0 +1,263 @@
+// Colors
+$mainColor: #fff;
+$btnColor: #27b7c1;
+$btnColorLight: #27c19e;
+$resultSecondary: #4a4a4a;
+
+@mixin flex-justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+    padding: 10px;
+  }
+  
+main {
+    margin: 0px auto 50px auto;
+    text-align: center;
+    background-image: url('https://content.codecademy.com/courses/intermediate-javascript-requests/wanderlust/background_photo_desktop.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 150px;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: $mainColor;
+    margin: auto;
+}
+
+h3 {
+    font-family: Work Sans;
+    font-weight: 500;
+    line-height: 1.29;
+    color: $btnColorLight;
+    padding-left: 5px;
+}
+
+p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.36;
+    text-align: left;
+    color: $resultSecondary;
+    padding-left: 5px;
+}
+
+form {
+    margin-top: 50px;
+    height: 100px;
+}
+
+label {
+    color: #ffffff;
+    display: block;
+    padding: 0 20px 8px;
+    font-family: Work Sans;
+}
+
+::placeholder {
+    color: $resultSecondary;
+    text-align: center;
+}    
+
+  footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    visibility: hidden;
+  }
+  
+  .weather {
+    width: 200px;
+    height: 260px;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+    h2 {
+      position: relative;
+      padding: 5px;
+      font-family: Montserrat;
+      font-size: 18px;
+      line-height: 0.78;
+      text-align: left;
+      color: $resultSecondary;
+    }
+  }
+  
+  .weathericon {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .venue {
+    width: 275px;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .venueimage {
+    margin-top: 20px;
+  }
+  
+  #destination {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: $btnColor;
+  }
+  
+  .sectiontitle {
+    width: 300px;
+    align-items: center;
+
+    h2 {
+      font-family: Montserrat;
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 3.4px;
+      text-align: left;
+      color: $resultSecondary;
+    }
+  }
+  
+  #venues {
+    @include flex-justify-around;
+    min-height: 250px;
+    h2 {
+      font-family: Work Sans;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 0.77;
+      text-align: center;
+      padding-top: 5px;
+    }
+  }
+  
+  #weather {
+    @include flex-justify-around();
+    min-height: 150px;
+  }
+  
+  #input-group {
+    display: inline;
+  }
+
+  #city {
+    width: 286px;
+    height: 46px;
+    border-radius: 16px;
+    border: solid 2.5px $mainColor;
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    // background-color: inherit;
+    opacity: 0.73;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: $resultSecondary;
+  }
+
+  
+  #button {
+    width: 140px;
+    height: 46px;
+    border-radius: 16px;
+    background-color: $btnColor;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0.94;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $mainColor;
+  }
+  
+  @media (max-width: 980px) {
+    h1 {
+      font-size: 48px;
+    }
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .sectiontitle {
+      h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    main {
+      background-image: url('https://content.codecademy.com/courses/intermediate-javascript-requests/wanderlust/background_photo_moble.jpg');
+    }
+  
+    h1 {
+      padding-top: 80px;
+      font-size: 32px;
+    }
+  
+    form {
+      margin-top: 30px;
+      padding-bottom: 10px;
+    }
+  
+    #venues, #weather {
+      @include flex-column-center();
+    }
+    .venue, .weather {
+      @include flex-column-center();
+      margin: 10px auto;
+      width: 80%;
+    }
+  
+    .weather {
+      padding: 10px 20px;
+      height: 100%;
+    }
+  
+    .sectiontitle, .sectiontitle h2, #destination {
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    main {
+      height: 65vh;
+      #city {
+        width: 80%;
+        min-width: 150px;
+      }
+      #button {
+        margin-top: 8px;
+      }
+      h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }

@@ -6,51 +6,57 @@
     <link rel="stylesheet" type="text/css" href="public/reset.css" />
     <link rel="stylesheet" type="text/css" href="public/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img class="logo" src="https://content.codecademy.com/courses/intermediate-javascript-requests/wanderlust/logo.svg" alt="logo" />
+      <img class="logo" src="https://content.codecademy.com/courses/intermediate-javascript-requests/wanderlust/logo.svg" alt="Wanderlust Logo"/>
     </header>
     <main>
       <h1>Where would you like to go?</h1>
       <form autocomplete="off">
-        <input type="text" id="city">
+        <div id="input-group">
+          <label for="city">Please input a US city and state to preview the local weather and top attractions</label>
+          <i>{</i>
+          <input type="text" id="city" placeholder="city, state">
+          <i>}</i>
+        </div>
         <button id="button" type="submit">Submit</button>
+
       </form>
     </main>
     <div class="container">
-    <div id="destination">
+      <div id="destination">
 
-    </div>
-    <div class="sectiontitle">
-      <h2>CURRENT WEATHER</h2>
-    </div>
-    <section id="weather">
+      </div>
+      <div class="sectiontitle">
+        <h2>CURRENT WEATHER</h2>
+      </div>
+      <section id="weather">
 
-        <div class="weather" id="weather1">
+          <div class="weather" id="weather1">
+
+          </div>
+
+      </section>
+      <div class="sectiontitle">
+        <h2>TOP ATTRACTIONS</h2>
+      </div>
+      <section id="venues">
+        <div class="venue" id="venue1">
 
         </div>
+        <div class="venue" id="venue2">
 
-    </section>
-    <div class="sectiontitle">
-      <h2>TOP ATTRACTIONS</h2>
+        </div>
+        <div class="venue" id="venue3">
+
+        </div>
+      </section>
+      <footer>
+      </footer>
+
     </div>
-    <section id="venues">
-      <div class="venue" id="venue1">
-
-      </div>
-      <div class="venue" id="venue2">
-
-      </div>
-      <div class="venue" id="venue3">
-
-      </div>
-    </section>
-    <footer>
-    </footer>
-
-  </div>
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
