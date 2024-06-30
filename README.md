@@ -5,7 +5,11 @@ As part of a challenge found on [Onramp](https://onramp.io), this is an exercise
 ## Projects
 The following projects were completed as part of the curriculum for *The Odin Project* and *Codecademy*. The projects demonstrate use of HTML, CSS and JavaScript.
 
-### [google](https://gospino123.github.io/portfolio-projects/google)
+### [chatGPTReactClone](https://gospino123.github.io/chat-gpt-react-clone)
+Following a free 5-hour freeCodeCamp course presented by Ania Kubow, a renowned software developer and course creator, I created my own clone of ChatGPT.
+[[See Code]](https://github.com/gospino123/chat-gpt-react-clone/tree/main)
+
+### [google](https://github.com/gospino123/chat-gpt-react-clone/tree/main)
 Using HTML5 and CSS3 concepts learned in *The Odin Project*, I created a replica of the **Google** search page. This was an early project where I focused on using CSS to mirror the behavior seen on the **Google** search page.
 
 [[See Code](https://github.com/gospino123/portfolio-projects/tree/main/google)]
